@@ -60,6 +60,10 @@ pip-selfcheck.json
 !.env.example
 secrets.json
 
+
+# === Ref ===
+ref/
+
 # === Data & Models (Machine Learning) ===
 # Often ML/DL projects have large datasets and weights that shouldn't be committed to Git.
 # Uncomment the lines below to ignore them:
