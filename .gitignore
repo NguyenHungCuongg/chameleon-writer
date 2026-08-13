@@ -1,0 +1,74 @@
+# === OS Temporary Files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === IDEs and Editors ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === Virtual Environments ===
+.venv/
+venv/
+ENV/
+env/
+pip-selfcheck.json
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+# Prevent committing large Jupyter Notebook output if needed (optional)
+# *.ipynb
+
+# === Environments & Secrets ===
+.env
+.env.*
+!.env.example
+secrets.json
+
+# === Data & Models (Machine Learning) ===
+# Often ML/DL projects have large datasets and weights that shouldn't be committed to Git.
+# Uncomment the lines below to ignore them:
+# data/
+# models/
+# checkpoints/
+# runs/
+# *.h5
+# *.pkl
+# *.pt
+# *.pth
+# *.onnx
