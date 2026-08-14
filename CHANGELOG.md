@@ -6,6 +6,12 @@ Format: [Semantic Versioning](https://semver.org)
 
 ---
 
+## [1.0.1] — 2026-08-14
+
+### Fixed
+
+- Fixed YAML parsing errors in `readme-writer` and `slop-detector` caused by unquoted descriptions containing colons.
+
 ## [1.0.0] — 2026-08-13
 
 ### Added

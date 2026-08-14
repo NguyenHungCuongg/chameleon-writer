@@ -1,8 +1,8 @@
 ---
 name: readme-writer
-description: Write or rewrite GitHub READMEs and project documentation landing pages. Structure: What → Who → Install → One working example. No marketing language. No "blazing fast." No "elegant." Code blocks over prose for technical steps. No diff-anchored writing. Developer-facing — assumes a technical reader who wants to evaluate and use the project quickly. Anti-slop rules embedded. Supports write-new and polish-existing modes.
+description: 'Write or rewrite GitHub READMEs and project documentation landing pages. Structure: What → Who → Install → One working example. No marketing language. No "blazing fast." No "elegant." Code blocks over prose for technical steps. No diff-anchored writing. Developer-facing — assumes a technical reader who wants to evaluate and use the project quickly. Anti-slop rules embedded. Supports write-new and polish-existing modes.'
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "platform"
   pack: "chameleon-writer"
 ---

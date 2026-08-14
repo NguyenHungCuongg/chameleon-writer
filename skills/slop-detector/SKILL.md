@@ -1,8 +1,8 @@
 ---
 name: slop-detector
-description: Audit existing content for AI Slop patterns, score it on 5 dimensions, and produce a cleaned rewrite. Use when reviewing AI-generated or AI-assisted text before publishing. Runs a full scan against 33 humanizer patterns and stop-slop structural checks, then scores 1-10 on Directness, Rhythm, Trust, Authenticity, and Density. Below 35/50: must revise. Polish-only skill — does not write new content from scratch.
+description: 'Audit existing content for AI Slop patterns, score it on 5 dimensions, and produce a cleaned rewrite. Use when reviewing AI-generated or AI-assisted text before publishing. Runs a full scan against 33 humanizer patterns and stop-slop structural checks, then scores 1-10 on Directness, Rhythm, Trust, Authenticity, and Density. Below 35/50: must revise. Polish-only skill — does not write new content from scratch.'
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "core"
   pack: "chameleon-writer"
 ---
