@@ -1,11 +1,6 @@
 ---
 name: formal-executive
-description: |
-  Write or rewrite content in a formal executive tone. Use for C-suite memos,
-  board reports, investor updates, strategic proposals, and internal leadership
-  communications. Conclusions come first (pyramid structure). Precise, declarative,
-  no hedging. Anti-slop rules embedded — output reads like a sharp senior leader
-  wrote it, not like AI. Supports write-new and polish-existing modes.
+description: Write or rewrite content in a formal executive tone. Use for C-suite memos, board reports, investor updates, strategic proposals, and internal leadership communications. Conclusions come first (pyramid structure). Precise, declarative, no hedging. Anti-slop rules embedded — output reads like a sharp senior leader wrote it, not like AI. Supports write-new and polish-existing modes.
 metadata:
   version: "1.0.0"
   layer: "tone"

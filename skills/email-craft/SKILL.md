@@ -1,11 +1,6 @@
 ---
 name: email-craft
-description: |
-  Write or rewrite professional emails. No "I hope this email finds you well."
-  Gets to the point by sentence 3. One clear ask per email. No sycophantic openers,
-  no chatbot closers, no corporate filler. Works for cold outreach, internal
-  communication, follow-ups, and sensitive messages. Anti-slop rules embedded.
-  Supports write-new and polish-existing modes.
+description: Write or rewrite professional emails. No "I hope this email finds you well." Gets to the point by sentence 3. One clear ask per email. No sycophantic openers, no chatbot closers, no corporate filler. Works for cold outreach, internal communication, follow-ups, and sensitive messages. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
   version: "1.0.0"
   layer: "platform"

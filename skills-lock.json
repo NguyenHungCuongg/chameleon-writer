@@ -1,6 +1,18 @@
 {
   "version": 1,
   "skills": {
+    "anti-slop-core": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/anti-slop-core/SKILL.md",
+      "computedHash": "295e4543de9e25d788f769d2d00c30f9a8b9c1bbb7a4784f50d67759e68e9e7c"
+    },
+    "brutal-editor": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/brutal-editor/SKILL.md",
+      "computedHash": "25c6dac7b6d3d16984f0c50c266231de1466e70d297b5cf666a09e4d2b15d429"
+    },
     "context-engineering": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
@@ -19,6 +31,24 @@
       "skillPath": "skills/doubt-driven-development/SKILL.md",
       "computedHash": "880332887b731e34509974dd6b62c8ae3943367f3b8ca0dd1bbb4479f474f73e"
     },
+    "eli5-explainer": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/eli5-explainer/SKILL.md",
+      "computedHash": "78a05583dea07b28b088c201bee6b3ccbd97208bc13e1496320d673f8330d148"
+    },
+    "email-craft": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/email-craft/SKILL.md",
+      "computedHash": "ac442c0f974919f8156f917a0f05ec8b910a6851b58410c2d4c6cd4cc9c3f94e"
+    },
+    "formal-executive": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/formal-executive/SKILL.md",
+      "computedHash": "1005085c43f2854df448dd86071cc3b950fbf0e8689eda2c4d4047f45fb677c0"
+    },
     "idea-refine": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
@@ -30,6 +60,30 @@
       "sourceType": "github",
       "skillPath": "skills/interview-me/SKILL.md",
       "computedHash": "efded91ac7f7626239b338ce8622afeb557151b86532b632f3c9eb5b2ff9048f"
+    },
+    "linkedin-post": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/linkedin-post/SKILL.md",
+      "computedHash": "7e17311287c08db069aa6dacfc356d0e18ad7d48e57885f2a1df4f83a4580d7e"
+    },
+    "readme-writer": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/readme-writer/SKILL.md",
+      "computedHash": "29b7ed07ad04eb27593239cf4643e712f3af1bcd7de48b8f224d62d8e34b8fd4"
+    },
+    "slide-script": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/slide-script/SKILL.md",
+      "computedHash": "d4abab293e91fb0d9e0ad46b8d13171549163397f70fb17ae540ca9e3b872a84"
+    },
+    "slop-detector": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/slop-detector/SKILL.md",
+      "computedHash": "c6e9a20b3ee48f9f35ea4f0ef1d4aae3b050074df2137da4b8cb0e15d6ad54f8"
     },
     "source-driven-development": {
       "source": "addyosmani/agent-skills",
@@ -43,17 +97,47 @@
       "skillPath": "skills/spec-driven-development/SKILL.md",
       "computedHash": "2dee9aa940633b7b5e0f45be34839ab31c0de98d482e16772c5cd350f4b91b4b"
     },
+    "storyteller": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/storyteller/SKILL.md",
+      "computedHash": "3d8ead65224ad0c43e2b23631c220abf081bb09e53c3e18d4bae176bcff55805"
+    },
+    "tech-doc": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/tech-doc/SKILL.md",
+      "computedHash": "4187f88ac484bc780160dc8a52e0aa9ee855bcdd198baa8a8f2cd5408e7e69ab"
+    },
     "test-driven-development": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
       "skillPath": "skills/test-driven-development/SKILL.md",
       "computedHash": "a8fef2b010af8402fd2979bdb2e5e39e5baa1ca14b5cdec366ee75df5e1dec68"
     },
+    "twitter-thread-craft": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/twitter-thread-craft/SKILL.md",
+      "computedHash": "8d8f16bf6d1daa2922f1a503cc383b2e9f73a9f015aeb0b9b26c972ae5d28cf1"
+    },
     "using-agent-skills": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
       "skillPath": "skills/using-agent-skills/SKILL.md",
       "computedHash": "636ae59f809148bcb82b5f8dc5ae5204fba0724f1a34d7cd75890f1ad60990a2"
+    },
+    "voice-fingerprint": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/voice-fingerprint/SKILL.md",
+      "computedHash": "837503dab5c9b5f61130fc5fed1372dae5c3a317e6b1094d417f7d87f03d3f3b"
+    },
+    "witty-conversational": {
+      "source": "NguyenHungCuongg/chameleon-writer",
+      "sourceType": "github",
+      "skillPath": "skills/witty-conversational/SKILL.md",
+      "computedHash": "2761afe2a2a1aad2e286057eb89947c6319dfe7b4f6ffacdaec5d23e39caedae"
     }
   }
 }

@@ -1,11 +1,6 @@
 ---
 name: slide-script
-description: |
-  Write or rewrite scripts for slide presentations. Each slide = one idea.
-  Script sounds spoken, not written. Sentences under 20 words in speaker notes.
-  Transitions are content, not announcements. No "Next, we'll look at..." —
-  just start the next point. Anti-slop rules embedded. Supports write-new and
-  polish-existing modes.
+description: Write or rewrite scripts for slide presentations. Each slide = one idea. Script sounds spoken, not written. Sentences under 20 words in speaker notes. Transitions are content, not announcements. No "Next, we'll look at..." — just start the next point. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
   version: "1.0.0"
   layer: "platform"

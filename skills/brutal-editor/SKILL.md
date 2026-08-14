@@ -1,12 +1,6 @@
 ---
 name: brutal-editor
-description: |
-  Cut any draft to a user-defined target. Specify a word count, character count,
-  or percentage reduction (e.g. "cut to 200 words" or "cut by 40%"). Removes
-  adverbs first, then hedges, then repetition, then promotional phrasing, then
-  transition crutches. Never cuts the most specific detail in any paragraph.
-  Flags any cut that loses verifiable information. Anti-slop rules embedded.
-  Polish-only skill — provide a draft to cut.
+description: Cut any draft to a user-defined target. Specify a word count, character count, or percentage reduction (e.g. "cut to 200 words" or "cut by 40%"). Removes adverbs first, then hedges, then repetition, then promotional phrasing, then transition crutches. Never cuts the most specific detail in any paragraph. Flags any cut that loses verifiable information. Anti-slop rules embedded. Polish-only skill — provide a draft to cut.
 metadata:
   version: "1.0.0"
   layer: "platform"

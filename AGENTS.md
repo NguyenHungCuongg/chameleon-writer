@@ -39,14 +39,15 @@ Every `SKILL.md` must have valid YAML frontmatter with at minimum:
 ```yaml
 ---
 name: skill-name
-description: |
-  Description text.
+description: Description text as a single inline string. No line breaks.
 metadata:
   version: "X.Y.Z"
   layer: "core|tone|platform"
   pack: "chameleon-writer"
 ---
 ```
+
+> **Critical:** `description` must be a **single-line inline string**. Do NOT use YAML block scalar syntax (`|` or `>`). Multi-line descriptions prevent agents (Antigravity, Cursor, etc.) from discovering the skill in their slash command autocomplete. The description should fit on one line — trim it if necessary.
 
 ### Self-contained skills
 **No skill may reference files from another skill directory.** When a user installs a single skill via `npx skills add ... --skill <name>`, only that skill's directory is available. Anti-slop rules must be embedded inline in every Layer 1 and Layer 2 skill — not referenced from `anti-slop-core/`.

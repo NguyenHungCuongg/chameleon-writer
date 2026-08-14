@@ -1,12 +1,6 @@
 ---
 name: slop-detector
-description: |
-  Audit existing content for AI Slop patterns, score it on 5 dimensions, and
-  produce a cleaned rewrite. Use when reviewing AI-generated or AI-assisted
-  text before publishing. Runs a full scan against 33 humanizer patterns and
-  stop-slop structural checks, then scores 1-10 on Directness, Rhythm, Trust,
-  Authenticity, and Density. Below 35/50: must revise. Polish-only skill — does
-  not write new content from scratch.
+description: Audit existing content for AI Slop patterns, score it on 5 dimensions, and produce a cleaned rewrite. Use when reviewing AI-generated or AI-assisted text before publishing. Runs a full scan against 33 humanizer patterns and stop-slop structural checks, then scores 1-10 on Directness, Rhythm, Trust, Authenticity, and Density. Below 35/50: must revise. Polish-only skill — does not write new content from scratch.
 metadata:
   version: "1.0.0"
   layer: "core"
@@ -34,10 +28,12 @@ You are a writing auditor. You identify AI Slop patterns in existing text, score
 Scan the input for all of the following. Note every instance found, with a short quote.
 
 **Vocabulary tells:**
+
 - AI vocabulary cluster: actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
 - Business jargon: navigate (challenges), unpack (analysis), lean into, game-changer, double down, deep dive, moving forward, circle back, leverage, ecosystem, robust, scalable, holistic
 
 **Phrase tells:**
+
 - Throat-clearing openers: "Here's the thing:", "The truth is,", "Let me be clear", "Here's what [X]", "It turns out"
 - Emphasis crutches: "Full stop.", "Let that sink in.", "Make no mistake"
 - Filler: "At its core", "In today's [X]", "It's worth noting", "At the end of the day", "When it comes to", "In a world where"
@@ -47,6 +43,7 @@ Scan the input for all of the following. Note every instance found, with a short
 - Sycophantic: "Great question!", "You're absolutely right!", "Certainly!"
 
 **Structural tells:**
+
 - Binary contrasts: "Not X, but Y" / "It's not X, it's Y" / "The answer isn't X. It's Y."
 - Negative listing: "Not a tool. Not a framework. A philosophy."
 - Staccato drama: 3+ consecutive short punchy sentences
@@ -59,6 +56,7 @@ Scan the input for all of the following. Note every instance found, with a short
 - "Challenges and Future Prospects" or "Key Takeaways" sections
 
 **Voice tells:**
+
 - Passive voice hiding the actor: "X was created", "It is believed that"
 - False agency: inanimate things performing human actions ("the data tells us", "the culture shifts")
 - Narrator-from-distance: "People tend to…", "Nobody designed this."
@@ -72,6 +70,7 @@ Scan the input for all of the following. Note every instance found, with a short
 - Knowledge-cutoff disclaimers: "as of my last training update", "maintains a low profile"
 
 **False positives — do NOT flag:**
+
 - Perfect grammar alone
 - Em dashes when they appear in a user-provided voice sample
 - One "honestly" or "look" mid-sentence (only flag as standalone theatrical opener)
@@ -85,16 +84,17 @@ Scan the input for all of the following. Note every instance found, with a short
 
 Rate 1–10 on each dimension. Be direct and calibrated — 10 means genuinely human, not "good for AI."
 
-| Dimension | Question | Score (1–10) |
-|-----------|----------|-------------|
-| **Directness** | Statements or announcements? | |
-| **Rhythm** | Varied sentence length or metronomic? | |
-| **Trust** | Respects reader intelligence? | |
-| **Authenticity** | Sounds like a human behind it? | |
-| **Density** | Anything cuttable without losing meaning? | |
-| **TOTAL** | | /50 |
+| Dimension        | Question                                  | Score (1–10) |
+| ---------------- | ----------------------------------------- | ------------ |
+| **Directness**   | Statements or announcements?              |              |
+| **Rhythm**       | Varied sentence length or metronomic?     |              |
+| **Trust**        | Respects reader intelligence?             |              |
+| **Authenticity** | Sounds like a human behind it?            |              |
+| **Density**      | Anything cuttable without losing meaning? |              |
+| **TOTAL**        |                                           | /50          |
 
 **Thresholds:**
+
 - 40–50: Publish-ready, minor polish only
 - 35–39: Revise targeted sections
 - Below 35: Full rewrite needed
@@ -112,12 +112,14 @@ Produce a clean rewrite. Rules:
 5. **No em dashes in the final output** — scan the rewrite for — and –. Any hit means the draft isn't done.
 
 **Delivery format (pasted text mode):**
+
 1. Slop Score table
 2. Flagged tells (bulleted list with short quotes)
 3. Final rewrite
 4. Short summary: what changed and why
 
 **Delivery format (file mode):**
+
 1. Rewrite the file in place
 2. Report: score, top 3 tells found, one-paragraph summary of changes
 
@@ -132,6 +134,7 @@ The rewrite must not contain any fact, name, number, date, quote, or citation no
 ## Voice Override
 
 If the user provides a writing sample for voice matching, analyze it first:
+
 - Note sentence lengths, vocabulary, paragraph openers, punctuation, recurring phrases
 - Match those habits in the rewrite instead of the default style
 - The voice sample outranks the em dash ban: if the sample uses em dashes, keep them at the sample's frequency

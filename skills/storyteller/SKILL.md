@@ -1,11 +1,6 @@
 ---
 name: storyteller
-description: |
-  Write or rewrite content in a narrative storyteller tone. Use for case studies,
-  personal essays, brand narratives, long-form articles, and any content where
-  human experience drives the point home. Opens with scene, not thesis. Specific
-  sensory detail. Mixed sentence rhythm. Opinions and unresolved tension allowed.
-  Anti-slop rules embedded. Supports write-new and polish-existing modes.
+description: Write or rewrite content in a narrative storyteller tone. Use for case studies, personal essays, brand narratives, long-form articles, and any content where human experience drives the point home. Opens with scene, not thesis. Specific sensory detail. Mixed sentence rhythm. Opinions and unresolved tension allowed. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
   version: "1.0.0"
   layer: "tone"

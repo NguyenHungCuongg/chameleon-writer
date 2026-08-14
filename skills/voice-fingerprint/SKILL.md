@@ -1,12 +1,6 @@
 ---
 name: voice-fingerprint
-description: |
-  Extract a user's personal writing style from samples and apply it to any
-  content. Use when you want AI output to sound like you, not like AI. Provide
-  2-5 paragraphs of your own writing; the skill analyzes sentence rhythm,
-  vocabulary, punctuation, and register, then produces a compact Voice Profile
-  you can paste into any other chameleon-writer skill to override its defaults.
-  Minimum 150 words of sample text required.
+description: Extract a user's personal writing style from samples and apply it to any content. Use when you want AI output to sound like you, not like AI. Provide 2-5 paragraphs of your own writing; the skill analyzes sentence rhythm, vocabulary, punctuation, and register, then produces a compact Voice Profile you can paste into any other chameleon-writer skill to override its defaults. Minimum 150 words of sample text required.
 metadata:
   version: "1.0.0"
   layer: "core"

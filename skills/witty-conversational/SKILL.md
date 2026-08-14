@@ -1,11 +1,6 @@
 ---
 name: witty-conversational
-description: |
-  Write or rewrite content in a witty, conversational tone. Use for blog posts,
-  opinion pieces, casual essays, social copy, and any content where personality
-  and directness matter more than formality. Direct second-person. Short sentences
-  that land. Opinions stated without hedging. Humor used sparingly and earned,
-  not performed. Anti-slop rules embedded. Supports write-new and polish-existing modes.
+description: Write or rewrite content in a witty, conversational tone. Use for blog posts, opinion pieces, casual essays, social copy, and any content where personality and directness matter more than formality. Direct second-person. Short sentences that land. Opinions stated without hedging. Humor used sparingly and earned, not performed. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
   version: "1.0.0"
   layer: "tone"

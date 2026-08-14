@@ -1,11 +1,6 @@
 ---
 name: anti-slop-core
-description: |
-  Master anti-slop rulebook for AI writing. Use as a standalone reference or
-  install alongside other chameleon-writer skills. Contains all 33 AI writing
-  patterns to eliminate (from humanizer), structural anti-patterns (from stop-slop),
-  banned phrase lists, and false-positive guards. This skill does not write or
-  rewrite — it is a reference. For auditing and fixing content, use slop-detector.
+description: Master anti-slop rulebook for AI writing. Use as a standalone reference or install alongside other chameleon-writer skills. Contains all 33 AI writing patterns to eliminate (from humanizer), structural anti-patterns (from stop-slop), banned phrase lists, and false-positive guards. This skill does not write or rewrite — it is a reference. For auditing and fixing content, use slop-detector.
 metadata:
   version: "1.0.0"
   layer: "core"

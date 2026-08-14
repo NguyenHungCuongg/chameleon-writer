@@ -1,10 +1,6 @@
 ---
 name: twitter-thread-craft
-description: |
-  Write or rewrite Twitter/X threads. Tweet 1 = the thesis, stated directly.
-  No "A thread 🧵". Each tweet stands alone. Target 8-12 tweets. No cliffhanger
-  filler between tweets. Punchy, specific, worth retweeting individually.
-  Anti-slop rules embedded. Supports write-new and polish-existing modes.
+description: Write or rewrite Twitter/X threads. Tweet 1 = the thesis, stated directly. No "A thread 🧵". Each tweet stands alone. Target 8-12 tweets. No cliffhanger filler between tweets. Punchy, specific, worth retweeting individually. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
   version: "1.0.0"
   layer: "platform"

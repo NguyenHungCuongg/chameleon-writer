@@ -7,23 +7,34 @@
   <a href="./LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-4911b7?style=flat-square"></a>
   <a href="./README.md"><img src="https://img.shields.io/badge/tones-4-4911b7?style=flat-square" alt="4 tones"></a>
   <a href="./README.md"><img src="https://img.shields.io/badge/platforms-7-4911b7?style=flat-square" alt="7 platforms"></a>
-  <a href="https://github.com/NguyenHungCuongg/chameleon-writer/stargazers"><img src="https://img.shields.io/github/stars/NguyenHungCuongg/chameleon-writer?style=flat-square&color=c0952f" alt="Stars"></a>
 </p>
 
 A portable Agent Skill Pack that eliminates AI Slop from writing. 12 skills in 3 composable layers: Core anti-slop tools, Tone skills (how it sounds), and Platform skills (where it goes).
 
 ## Install
 
+### Project Installation (Local to current project)
+
 ```bash
-# Install the full suite
+# Install the full suite into the current project
+npx skills add NguyenHungCuongg/chameleon-writer
+
+# Install a single skill into the current project
+npx skills add NguyenHungCuongg/chameleon-writer --skill slop-detector
+```
+
+### Global Installation (Available everywhere)
+
+```bash
+# Install the full suite globally
 npx skills add NguyenHungCuongg/chameleon-writer --global
 
-# Install a single skill
+# Install a single skill globally
 npx skills add NguyenHungCuongg/chameleon-writer --skill slop-detector --global
 npx skills add NguyenHungCuongg/chameleon-writer --skill formal-executive --global
 ```
 
-Or install into every supported agent harness:
+Or install into every supported agent harness globally:
 
 ```bash
 npx skills add NguyenHungCuongg/chameleon-writer --global --agent '*'

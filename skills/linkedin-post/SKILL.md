@@ -1,10 +1,6 @@
 ---
 name: linkedin-post
-description: |
-  Write or rewrite LinkedIn posts. First sentence = the actual point. No hustle porn.
-  No "I'm humbled to announce." No fake vulnerability. No emoji spam. No bullet-point
-  walls. Treats the reader as an adult. Anti-slop rules embedded plus LinkedIn-specific
-  patterns. Supports write-new and polish-existing modes.
+description: Write or rewrite LinkedIn posts. First sentence = the actual point. No hustle porn. No "I'm humbled to announce." No fake vulnerability. No emoji spam. No bullet-point walls. Treats the reader as an adult. Anti-slop rules embedded plus LinkedIn-specific patterns. Supports write-new and polish-existing modes.
 metadata:
   version: "1.0.0"
   layer: "platform"

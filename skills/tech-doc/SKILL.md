@@ -1,11 +1,6 @@
 ---
 name: tech-doc
-description: |
-  Write or rewrite technical documentation. Use for API references, guides,
-  READMEs, runbooks, architecture docs, and any developer-facing content.
-  Active voice. Name the actor. Code examples over prose. No promotional language.
-  No diff-anchored writing. Anti-slop rules embedded. Supports write-new and
-  polish-existing modes.
+description: Write or rewrite technical documentation. Use for API references, guides, READMEs, runbooks, architecture docs, and any developer-facing content. Active voice. Name the actor. Code examples over prose. No promotional language. No diff-anchored writing. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
   version: "1.0.0"
   layer: "platform"

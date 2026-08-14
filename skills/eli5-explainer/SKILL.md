@@ -1,12 +1,6 @@
 ---
 name: eli5-explainer
-description: |
-  Write or rewrite content that explains complex topics to non-expert audiences.
-  ELI5 (Explain Like I'm 5) — but smart, not patronizing. One concept per sentence.
-  Analogies from everyday life, not corporate abstractions. No jargon without
-  immediate definition. Short paragraphs. The goal is genuine understanding, not
-  simplified performance. Anti-slop rules embedded. Supports write-new and
-  polish-existing modes.
+description: Write or rewrite content that explains complex topics to non-expert audiences. ELI5 (Explain Like I'm 5) — but smart, not patronizing. One concept per sentence. Analogies from everyday life, not corporate abstractions. No jargon without immediate definition. Short paragraphs. The goal is genuine understanding, not simplified performance. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
   version: "1.0.0"
   layer: "tone"
