@@ -1,0 +1,7 @@
+The product team shipped a new onboarding flow last week. Early feedback has been positive, with users completing setup 40% faster than before.
+
+That said, it's worth noting that retention numbers haven't moved yet — it's still too early to draw conclusions. The team will circle back to this in the next sprint review.
+
+This update also enhances the dashboard experience. Users can now highlight key metrics directly from the main view, which makes it easier to navigate the data and align with their goals.
+
+The next milestone is scheduled for Q4. Moving forward, the focus will be on scalability and making the platform more robust for enterprise customers.

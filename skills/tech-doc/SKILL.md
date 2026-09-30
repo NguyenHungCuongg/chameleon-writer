@@ -2,7 +2,7 @@
 name: tech-doc
 description: Write or rewrite technical documentation. Use for API references, guides, READMEs, runbooks, architecture docs, and any developer-facing content. Active voice. Name the actor. Code examples over prose. No promotional language. No diff-anchored writing. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "platform"
   pack: "chameleon-writer"
 ---
@@ -59,8 +59,11 @@ Use tech-doc to rewrite: [paste draft]
 
 Technical documentation has its own flavor of AI slop: promotional language, vague claims, diff-anchored writing, and passive voice that hides who does what.
 
-### Remove from vocabulary:
-delve, tapestry, landscape (abstract), pivotal, testament, underscore (verb), vibrant, showcase, groundbreaking, comprehensive, robust (as filler — say specifically what's strong about it), holistic, ecosystem (as metaphor), cutting-edge, state-of-the-art, next-generation, innovative, powerful (as filler), seamless, intuitive, simple (when the thing is not actually simple)
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
+groundbreaking, comprehensive, robust (as filler — say specifically what's strong about it), holistic, ecosystem (as metaphor), cutting-edge, state-of-the-art, next-generation, innovative, powerful (as filler), seamless, intuitive, simple (when the thing is not actually simple)
 
 ### Remove these phrases:
 - "It's worth noting that…" → note it directly or put it in a callout block

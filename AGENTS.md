@@ -4,7 +4,7 @@ Guidance for AI coding agents working in this repository.
 
 ## What This Repo Is
 
-A portable Agent Skill Pack: 12 writing skills organized in 3 layers (Core, Tone, Platform) that eliminate AI Slop from AI-generated content. All skills are plain Markdown (`SKILL.md`) with YAML frontmatter — no build step, no runtime beyond the agent harness.
+A portable Agent Skill Pack: 14 writing skills organized in 3 layers (Core, Tone, Platform) that eliminate AI Slop from AI-generated content. All skills are plain Markdown (`SKILL.md`) with YAML frontmatter — no build step, no runtime beyond the agent harness.
 
 ## Key Files
 
@@ -12,6 +12,7 @@ A portable Agent Skill Pack: 12 writing skills organized in 3 layers (Core, Tone
 - `README.md` — installation, usage, skill table (source of truth for users)
 - `CHANGELOG.md` — version history
 - `AGENTS.md` — this file; guidance for agents
+- `tests/` — `validate-skills.js` (maintenance contract checks), `lint-check.js` (banned-term counter), and eval fixtures
 
 ## Skill Directory
 
@@ -30,7 +31,7 @@ A portable Agent Skill Pack: 12 writing skills organized in 3 layers (Core, Tone
 | `twitter-thread-craft` | Platform | Twitter/X threads |
 | `readme-writer` | Platform | GitHub READMEs |
 | `slide-script` | Platform | Presentation speaker notes |
-| `brutal-editor` | Platform | User-defined cuts |
+| `brutal-editor` | Core | User-defined cuts |
 
 ## Maintenance Contract
 
@@ -50,10 +51,10 @@ metadata:
 > **Critical:** `description` must be a **single-line inline string**. Do NOT use YAML block scalar syntax (`|` or `>`). Multi-line descriptions prevent agents (Antigravity, Cursor, etc.) from discovering the skill in their slash command autocomplete. The description should fit on one line — trim it if necessary.
 
 ### Self-contained skills
-**No skill may reference files from another skill directory.** When a user installs a single skill via `npx skills add ... --skill <name>`, only that skill's directory is available. Anti-slop rules must be embedded inline in every Layer 1 and Layer 2 skill — not referenced from `anti-slop-core/`.
+**No skill may reference files from another skill directory.** When a user installs a single skill via `npx skills add ... --skill <name>`, only that skill's directory is available. Anti-slop rules must be embedded inline in every skill, not referenced from `anti-slop-core/`.
 
 ### Consistency rule
-All Layer 1 and Layer 2 skills must embed the same core anti-slop vocabulary list. When updating the anti-slop vocabulary (adding or removing words), update all 11 skill files that embed it. Check by searching for "delve" — it appears in every skill's anti-slop section.
+Every skill must embed the same 22-word core AI vocabulary list (the `AI_VOCABULARY` array in `tests/lint-check.js`, mirrored from `slop-detector`). Skills add their own context-specific words under "Also remove from vocabulary". When changing the core list, update `tests/lint-check.js` and all 14 skill files, then run `node tests/validate-skills.js`.
 
 ### Version bumping
 When adding patterns, fixing behavior, or changing any skill's output in a meaningful way:
@@ -71,16 +72,16 @@ Skill descriptions (in YAML frontmatter) should describe what the skill does and
 - Preserve valid YAML frontmatter (formatting and indentation)
 - The prompt body below the frontmatter is the product — edit it like a careful instruction document
 - Read the skill aloud after editing to verify it sounds like instruction, not prose performance
-- Run `npx skills add . --list` to verify all skills are valid after edits
+- Run `node tests/validate-skills.js` and `npx skills add . --list` to verify all skills are valid after edits
 
 ## Adding a New Skill
 
 1. Create `skills/<skill-name>/SKILL.md`
 2. Add valid frontmatter with `layer` and `pack` metadata
-3. Embed the anti-slop vocabulary section if it's a Layer 1 or Layer 2 skill
+3. Embed the core AI vocabulary list in its anti-slop section
 4. Add it to the skill table in `README.md` and `AGENTS.md`
 5. Add a version entry in `CHANGELOG.md`
-6. Run `npx skills add . --list` to verify
+6. Run `node tests/validate-skills.js` and `npx skills add . --list` to verify
 
 ## What This Repo Does NOT Do
 

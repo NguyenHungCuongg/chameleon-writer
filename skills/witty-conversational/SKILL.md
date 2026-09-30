@@ -2,7 +2,7 @@
 name: witty-conversational
 description: Write or rewrite content in a witty, conversational tone. Use for blog posts, opinion pieces, casual essays, social copy, and any content where personality and directness matter more than formality. Direct second-person. Short sentences that land. Opinions stated without hedging. Humor used sparingly and earned, not performed. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "tone"
   pack: "chameleon-writer"
 ---
@@ -58,8 +58,11 @@ Use witty-conversational to rewrite: [paste draft]
 
 Witty-conversational writing is the direct opposite of AI slop. AI writes to cover all cases; this voice writes for a specific person, with a specific take.
 
-### Remove from vocabulary:
-delve, tapestry, landscape (abstract), pivotal, testament, underscore (verb), vibrant, showcase, groundbreaking, comprehensive, foster, foster, holistic, synergy, leverage (verb), ecosystem, game-changer, robust, scalable
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
+groundbreaking, comprehensive, holistic, synergy, leverage (verb), ecosystem, game-changer, robust, scalable
 
 ### Remove these phrases:
 - "Here's the thing:" → state the thing

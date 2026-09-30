@@ -1,8 +1,8 @@
 ---
 name: slide-script
-description: Write or rewrite scripts for slide presentations. Each slide = one idea. Script sounds spoken, not written. Sentences under 20 words in speaker notes. Transitions are content, not announcements. No "Next, we'll look at..." — just start the next point. Anti-slop rules embedded. Supports write-new and polish-existing modes.
+description: Write or rewrite scripts for slide presentations. Each slide = one idea. Script sounds spoken, not written. Sentences under 20 words in speaker notes. Transitions are content, not announcements. No "Next, we'll look at...". Just start the next point. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "platform"
   pack: "chameleon-writer"
 ---
@@ -58,8 +58,11 @@ Use slide-script to rewrite these speaker notes: [paste script]
 
 Presentation scripts have their own AI slop: announcement transitions, significance inflation for every slide, and written-prose sentences that no one would actually say.
 
-### Remove from vocabulary:
-pivotal, testament, underscore, landscape (abstract), tapestry, showcase, groundbreaking, cutting-edge, revolutionary, transformative, impactful, robust (without specifics), seamless, delightful, powerful (without specifics), synergy, leverage (verb), ecosystem
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
+groundbreaking, cutting-edge, revolutionary, transformative, impactful, robust (without specifics), seamless, delightful, powerful (without specifics), synergy, leverage (verb), ecosystem
 
 ### Remove these phrases:
 **Transition announcements (replace with content transitions):**

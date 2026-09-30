@@ -2,7 +2,7 @@
 name: twitter-thread-craft
 description: Write or rewrite Twitter/X threads. Tweet 1 = the thesis, stated directly. No "A thread 🧵". Each tweet stands alone. Target 8-12 tweets. No cliffhanger filler between tweets. Punchy, specific, worth retweeting individually. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "platform"
   pack: "chameleon-writer"
 ---
@@ -57,7 +57,10 @@ Use twitter-thread-craft to rewrite: [paste thread, one tweet per line or number
 
 Twitter has its own slop: performative insights, manufactured controversy, and the "contrarian hot take" format that promises originality and delivers cliché.
 
-### Remove from vocabulary:
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
 unpopular opinion, hot take, here's the truth, nobody talks about this, the real reason, game-changer, paradigm shift, revolutionary, hustle, grind, crushing it, life-changing, must-read, thread you need to see, viral
 
 ### Remove these structures:

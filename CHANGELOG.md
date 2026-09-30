@@ -6,6 +6,21 @@ Format: [Semantic Versioning](https://semver.org)
 
 ---
 
+## [1.0.2] — 2026-09-30
+
+### Fixed
+
+- Every skill now embeds the same 22-word core AI vocabulary list. Five skills (`email-craft`, `linkedin-post`, `readme-writer`, `slide-script`, `twitter-thread-craft`) had none of it; the rest had partial copies. Skill-specific words moved under "Also remove from vocabulary"; duplicates removed.
+- Removed em dashes from skill descriptions, which the skills themselves ban.
+- Fixed the curly quotes example in `anti-slop-core` (Before and After were identical).
+- `brutal-editor` moved from the Platform layer to Core; it edits any text rather than targeting a platform.
+- Stopped publishing `.agents/` and `skills-lock.json` (local install artifacts that shipped duplicate and third-party skills).
+
+### Added
+
+- `tests/validate-skills.js`: checks frontmatter, single-line dash-free descriptions, YAML-breaking `: ` in unquoted descriptions, the core vocabulary list, and README/AGENTS listings.
+- `tests/lint-check.js`: the banned-term counter that `tests/eval-guide.md` already documented. `tests/` is now published.
+
 ## [1.0.1] — 2026-08-14
 
 ### Fixed
@@ -38,5 +53,5 @@ Format: [Semantic Versioning](https://semver.org)
 
 **Sources**
 - 33 AI slop patterns from [humanizer](https://github.com/blader/humanizer) by @blader (MIT)
-- Structural patterns and phrase lists from [stop-slop](https://github.com/hvpandya/stop-slop) by Hardik Pandya (MIT)
+- Structural patterns and phrase lists from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya (MIT)
 - Primary source: [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)

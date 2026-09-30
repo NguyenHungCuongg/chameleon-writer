@@ -2,7 +2,7 @@
 name: linkedin-post
 description: Write or rewrite LinkedIn posts. First sentence = the actual point. No hustle porn. No "I'm humbled to announce." No fake vulnerability. No emoji spam. No bullet-point walls. Treats the reader as an adult. Anti-slop rules embedded plus LinkedIn-specific patterns. Supports write-new and polish-existing modes.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "platform"
   pack: "chameleon-writer"
 ---
@@ -56,7 +56,10 @@ Use linkedin-post to rewrite: [paste draft]
 
 LinkedIn has its own slop dialect. These patterns are so common on the platform that avoiding them immediately signals a real voice.
 
-### Remove from vocabulary (LinkedIn-specific):
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary (LinkedIn-specific):
 hustle, grind, journey, passion, purpose-driven, authentic (as a self-description), impactful, synergy, bandwidth, leverage (verb), ecosystem, game-changer, paradigm shift, unlock (potential), transform (as empty verb), empower, elevate, crushing it, killing it, next level
 
 ### Remove these phrases (LinkedIn-specific):

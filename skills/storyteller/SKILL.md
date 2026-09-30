@@ -2,7 +2,7 @@
 name: storyteller
 description: Write or rewrite content in a narrative storyteller tone. Use for case studies, personal essays, brand narratives, long-form articles, and any content where human experience drives the point home. Opens with scene, not thesis. Specific sensory detail. Mixed sentence rhythm. Opinions and unresolved tension allowed. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "tone"
   pack: "chameleon-writer"
 ---
@@ -58,8 +58,11 @@ Use storyteller to rewrite: [paste draft]
 
 These rules apply to all output from this skill. Good storytelling is the opposite of AI slop — it is specific, voiced, and unresolved.
 
-### Remove from vocabulary:
-delve, tapestry, landscape (abstract), pivotal, testament, underscore (verb), vibrant, showcase, groundbreaking, comprehensive, foster, garner, realm, myriad, profound, nuanced (when used as filler), resonates (when applied to audiences, not instruments)
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
+groundbreaking, comprehensive, realm, myriad, profound, nuanced (when used as filler), resonates (when applied to audiences, not instruments)
 
 ### Remove these phrases:
 - "It's worth noting that…" → show it, don't note it

@@ -5,15 +5,13 @@
 <p align="center">
   <a href="https://skills.sh"><img alt="Skill" src="https://img.shields.io/badge/skills.sh-chameleon--writer-4911b7?style=flat-square"></a>
   <a href="./LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-4911b7?style=flat-square"></a>
-  <a href="./README.md"><img src="https://img.shields.io/badge/tones-4-4911b7?style=flat-square" alt="4 tones"></a>
-  <a href="./README.md"><img src="https://img.shields.io/badge/platforms-7-4911b7?style=flat-square" alt="7 platforms"></a>
 </p>
 
-A portable Agent Skill Pack that eliminates AI Slop from writing. 12 skills in 3 composable layers: Core anti-slop tools, Tone skills (how it sounds), and Platform skills (where it goes).
+An agent skill pack that removes AI slop from writing. Install one skill or all of them. Works in any agent harness that supports the skills.sh format.
 
 ## Install
 
-### Project Installation (Local to current project)
+### Project installation (local to current project)
 
 ```bash
 # Install the full suite into the current project
@@ -23,7 +21,7 @@ npx skills add NguyenHungCuongg/chameleon-writer
 npx skills add NguyenHungCuongg/chameleon-writer --skill slop-detector
 ```
 
-### Global Installation (Available everywhere)
+### Global installation (available everywhere)
 
 ```bash
 # Install the full suite globally
@@ -32,54 +30,89 @@ npx skills add NguyenHungCuongg/chameleon-writer --global
 # Install a single skill globally
 npx skills add NguyenHungCuongg/chameleon-writer --skill slop-detector --global
 npx skills add NguyenHungCuongg/chameleon-writer --skill formal-executive --global
+
+# Install into every supported agent harness globally
+npx skills add NguyenHungCuongg/chameleon-writer --global --agent "*"
 ```
 
-Or install into every supported agent harness globally:
+## Before and after
 
-```bash
-npx skills add NguyenHungCuongg/chameleon-writer --global --agent '*'
+A financial aid essay paragraph, before and after `slop-detector`:
+
+> **Before:** I have been actively learning through free resources such as documentation, tutorials, open-source projects, and educational videos. While these resources are helpful, I often find it difficult to follow a structured learning path and ensure that I fully understand the fundamental concepts. This is why I would like to take this course on Coursera.
+
+> **After:** I've been learning through documentation, tutorials, open-source projects, and educational videos. While material is accessible, I lack structure. Without a clear sequence, it's hard to know whether I've understood something or just gotten past it. That gap is why I'm applying for financial aid to take this course.
+
+Full texts: [`tests/manual test/first_input.md`](<tests/manual test/first_input.md>) (before) and [`tests/manual test/second_input.md`](<tests/manual test/second_input.md>) (after).
+
+## Quick start
+
+```
+/slop-detector
+
+[paste your draft]
 ```
 
-## How It Works
+```
+/voice-fingerprint
 
-**Three layers, composable.**
-
-| Layer        | Skill                  | Purpose                                  |
-| ------------ | ---------------------- | ---------------------------------------- |
-| **Core**     | `anti-slop-core`       | Master anti-slop rulebook                |
-| **Core**     | `slop-detector`        | Audit + score + rewrite existing content |
-| **Core**     | `voice-fingerprint`    | Extract and apply personal writing style |
-| **Tone**     | `formal-executive`     | C-suite voice, pyramid structure         |
-| **Tone**     | `storyteller`          | Scene-first, narrative, concrete detail  |
-| **Tone**     | `witty-conversational` | Direct, opinionated, earned humor        |
-| **Tone**     | `eli5-explainer`       | Clear, non-patronizing simplification    |
-| **Platform** | `tech-doc`             | Developer documentation, code-first      |
-| **Platform** | `email-craft`          | Professional email, one ask              |
-| **Platform** | `linkedin-post`        | LinkedIn posts, no hustle porn           |
-| **Platform** | `twitter-thread-craft` | Twitter/X threads                        |
-| **Platform** | `readme-writer`        | GitHub READMEs                           |
-| **Platform** | `slide-script`         | Presentation speaker notes               |
-| **Platform** | `brutal-editor`        | User-defined target cuts                 |
-
----
-
-## Voice Fingerprint: Make Any Skill Sound Like You
-
-1. Run `voice-fingerprint` with your own writing sample
-2. Save the Voice Profile it generates
-3. Paste it at the start of any skill session:
+[paste 2-5 paragraphs of your own writing]
+```
 
 ```
 My Voice Profile:
 [paste your Voice Profile here]
 
-Now use [skill-name] to write: [topic]
+Now use linkedin-post to write: [topic]
 ```
 
-The Voice Profile overrides the skill's default style — sentence rhythm, vocabulary, punctuation habits, register.
+## Skills
 
----
+14 skills in 3 layers. Skills are standalone: install one, get one, no cross-dependencies.
+
+- **Core** skills audit, cut, or restyle text you already have.
+- **Tone** skills set how the writing sounds.
+- **Platform** skills set the format for where the writing goes.
+
+| Layer    | Skill                  | Purpose                                  |
+| -------- | ---------------------- | ---------------------------------------- |
+| Core     | `anti-slop-core`       | Master anti-slop rulebook                |
+| Core     | `slop-detector`        | Audit + score + rewrite existing content |
+| Core     | `voice-fingerprint`    | Extract and apply personal writing style |
+| Core     | `brutal-editor`        | User-defined target cuts                 |
+| Tone     | `formal-executive`     | C-suite voice, pyramid structure         |
+| Tone     | `storyteller`          | Scene-first, narrative, concrete detail  |
+| Tone     | `witty-conversational` | Direct, opinionated, earned humor        |
+| Tone     | `eli5-explainer`       | Clear, non-patronizing simplification    |
+| Platform | `tech-doc`             | Developer documentation, code-first      |
+| Platform | `email-craft`          | Professional email, one ask              |
+| Platform | `linkedin-post`        | LinkedIn posts, no hustle porn           |
+| Platform | `twitter-thread-craft` | Twitter/X threads                        |
+| Platform | `readme-writer`        | GitHub READMEs                           |
+| Platform | `slide-script`         | Presentation speaker notes               |
+
+## Voice fingerprint
+
+Run `voice-fingerprint` on your own writing to get a Voice Profile. Paste that profile at the start of any skill session to override the skill's default tone with yours: sentence rhythm, vocabulary, punctuation habits, register.
+
+## Feedback & contributions
+
+Suggestions and bug reports:
+
+- Open a Pull Request or Issue on GitHub
+- Email [cuonghungnguyentop@gmail.com](mailto:cuonghungnguyentop@gmail.com)
+
+Before opening a PR that edits a skill, run `node tests/validate-skills.js` (Node.js only, no install). It checks frontmatter, the shared anti-slop vocabulary list, and the skill tables in this README and `AGENTS.md`. See [`tests/eval-guide.md`](tests/eval-guide.md) for the manual fixtures.
+
+## Credits
+
+The anti-slop patterns build on two MIT-licensed skills:
+
+- [humanizer](https://github.com/blader/humanizer) by Siqi Chen: the 33 AI writing patterns
+- [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya: structural patterns and phrase lists
+
+Both draw on [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing). Their copyright notices are in [`LICENSE`](LICENSE).
 
 ## License
 
-MIT · Copyright (c) 2026 NguyenHungCuongg
+MIT - Copyright (c) 2026 NguyenHungCuongg
