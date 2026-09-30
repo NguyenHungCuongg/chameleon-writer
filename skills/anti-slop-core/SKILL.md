@@ -126,4 +126,4 @@ Rewrites never add facts, names, dates, numbers, or citations not present in the
 - `references/structures.md` — banned structural patterns with fixes
 - `references/false-positives.md` — signs of human writing; what NOT to flag
 
-Sources: [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) · [humanizer](https://github.com/blader/humanizer) · [stop-slop](https://github.com/hvpandya/stop-slop)
+Sources: [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) · [humanizer](https://github.com/blader/humanizer) · [stop-slop](https://github.com/hardikpandya/stop-slop)

@@ -1,6 +1,6 @@
 # Structures Reference — Banned Structural Patterns
 
-Sourced from [stop-slop](https://github.com/hvpandya/stop-slop) by Hardik Pandya, with additions from [humanizer](https://github.com/blader/humanizer).
+Sourced from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya, with additions from [humanizer](https://github.com/blader/humanizer).
 
 ---
 

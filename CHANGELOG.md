@@ -53,5 +53,5 @@ Format: [Semantic Versioning](https://semver.org)
 
 **Sources**
 - 33 AI slop patterns from [humanizer](https://github.com/blader/humanizer) by @blader (MIT)
-- Structural patterns and phrase lists from [stop-slop](https://github.com/hvpandya/stop-slop) by Hardik Pandya (MIT)
+- Structural patterns and phrase lists from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya (MIT)
 - Primary source: [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)

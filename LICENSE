@@ -19,3 +19,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Third-party notices
+
+Portions of the anti-slop patterns are adapted from the following projects,
+each distributed under the MIT License with the same permission notice and
+disclaimer as above:
+
+humanizer (https://github.com/blader/humanizer)
+Copyright (c) 2025 Siqi Chen
+
+stop-slop (https://github.com/hardikpandya/stop-slop)
+Copyright (c) 2025 Hardik Pandya

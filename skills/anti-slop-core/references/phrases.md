@@ -1,6 +1,6 @@
 # Phrases Reference — Banned Phrases and Replacements
 
-Sourced from [stop-slop](https://github.com/hvpandya/stop-slop) by Hardik Pandya.
+Sourced from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya.
 
 ---
 

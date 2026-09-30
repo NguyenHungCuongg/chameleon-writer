@@ -32,15 +32,25 @@ npx skills add NguyenHungCuongg/chameleon-writer --skill slop-detector --global
 npx skills add NguyenHungCuongg/chameleon-writer --skill formal-executive --global
 
 # Install into every supported agent harness globally
-npx skills add NguyenHungCuongg/chameleon-writer --global --agent '*'
+npx skills add NguyenHungCuongg/chameleon-writer --global --agent "*"
 ```
+
+## Before and after
+
+A financial aid essay paragraph, before and after `slop-detector`:
+
+> **Before:** I have been actively learning through free resources such as documentation, tutorials, open-source projects, and educational videos. While these resources are helpful, I often find it difficult to follow a structured learning path and ensure that I fully understand the fundamental concepts. This is why I would like to take this course on Coursera.
+
+> **After:** I've been learning through documentation, tutorials, open-source projects, and educational videos. While material is accessible, I lack structure. Without a clear sequence, it's hard to know whether I've understood something or just gotten past it. That gap is why I'm applying for financial aid to take this course.
+
+Full texts: [`tests/manual test/first_input.md`](<tests/manual test/first_input.md>) (before) and [`tests/manual test/second_input.md`](<tests/manual test/second_input.md>) (after).
 
 ## Quick start
 
 ```
 /slop-detector
 
-Paste your draft here and I'll score it and rewrite it.
+[paste your draft]
 ```
 
 ```
@@ -60,11 +70,16 @@ Now use linkedin-post to write: [topic]
 
 14 skills in 3 layers. Skills are standalone: install one, get one, no cross-dependencies.
 
+- **Core** skills audit, cut, or restyle text you already have.
+- **Tone** skills set how the writing sounds.
+- **Platform** skills set the format for where the writing goes.
+
 | Layer    | Skill                  | Purpose                                  |
 | -------- | ---------------------- | ---------------------------------------- |
 | Core     | `anti-slop-core`       | Master anti-slop rulebook                |
 | Core     | `slop-detector`        | Audit + score + rewrite existing content |
 | Core     | `voice-fingerprint`    | Extract and apply personal writing style |
+| Core     | `brutal-editor`        | User-defined target cuts                 |
 | Tone     | `formal-executive`     | C-suite voice, pyramid structure         |
 | Tone     | `storyteller`          | Scene-first, narrative, concrete detail  |
 | Tone     | `witty-conversational` | Direct, opinionated, earned humor        |
@@ -75,7 +90,6 @@ Now use linkedin-post to write: [topic]
 | Platform | `twitter-thread-craft` | Twitter/X threads                        |
 | Platform | `readme-writer`        | GitHub READMEs                           |
 | Platform | `slide-script`         | Presentation speaker notes               |
-| Core     | `brutal-editor`        | User-defined target cuts                 |
 
 ## Voice fingerprint
 
@@ -85,8 +99,19 @@ Run `voice-fingerprint` on your own writing to get a Voice Profile. Paste that p
 
 Suggestions and bug reports:
 
-- Open a Pull Request or Issue on GitHub,
-- Contact via email [cuonghungnguyentop@gmail.com](mailto:cuonghungnguyentop@gmail.com).
+- Open a Pull Request or Issue on GitHub
+- Email [cuonghungnguyentop@gmail.com](mailto:cuonghungnguyentop@gmail.com)
+
+Before opening a PR that edits a skill, run `node tests/validate-skills.js` (Node.js only, no install). It checks frontmatter, the shared anti-slop vocabulary list, and the skill tables in this README and `AGENTS.md`. See [`tests/eval-guide.md`](tests/eval-guide.md) for the manual fixtures.
+
+## Credits
+
+The anti-slop patterns build on two MIT-licensed skills:
+
+- [humanizer](https://github.com/blader/humanizer) by Siqi Chen: the 33 AI writing patterns
+- [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya: structural patterns and phrase lists
+
+Both draw on [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing). Their copyright notices are in [`LICENSE`](LICENSE).
 
 ## License
 
