@@ -1,8 +1,8 @@
 ---
 name: anti-slop-core
-description: Master anti-slop rulebook for AI writing. Use as a standalone reference or install alongside other chameleon-writer skills. Contains all 33 AI writing patterns to eliminate (from humanizer), structural anti-patterns (from stop-slop), banned phrase lists, and false-positive guards. This skill does not write or rewrite — it is a reference. For auditing and fixing content, use slop-detector.
+description: Master anti-slop rulebook for AI writing. Use as a standalone reference or install alongside other chameleon-writer skills. Contains all 33 AI writing patterns to eliminate (from humanizer), structural anti-patterns (from stop-slop), banned phrase lists, and false-positive guards. This skill does not write or rewrite; it is a reference. For auditing and fixing content, use slop-detector.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "core"
   pack: "chameleon-writer"
 ---
@@ -55,7 +55,7 @@ See `references/patterns.md` for full Before/After examples.
 16. **Inline-header lists** — **Performance:** Performance improved → convert to prose
 17. **Title case headings** — "Strategic Negotiations And Partnerships" → "Strategic negotiations and partnerships"
 18. **Emojis** — remove from headings and bullet points
-19. **Curly quotes** — `"text"` → `"text"` in technical contexts
+19. **Curly quotes** — `“text”` → `"text"` in technical contexts
 26. **Hyphenated word pairs** — drop hyphens in predicate position (the report is high quality, not high-quality)
 27. **Persuasive authority tropes** — "At its core, what really matters is…" → state the point directly
 28. **Signposting announcements** — "Let's dive in", "Here's what you need to know" → start with the content

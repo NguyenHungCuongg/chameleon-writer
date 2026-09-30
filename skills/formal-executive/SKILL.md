@@ -1,8 +1,8 @@
 ---
 name: formal-executive
-description: Write or rewrite content in a formal executive tone. Use for C-suite memos, board reports, investor updates, strategic proposals, and internal leadership communications. Conclusions come first (pyramid structure). Precise, declarative, no hedging. Anti-slop rules embedded — output reads like a sharp senior leader wrote it, not like AI. Supports write-new and polish-existing modes.
+description: Write or rewrite content in a formal executive tone. Use for C-suite memos, board reports, investor updates, strategic proposals, and internal leadership communications. Conclusions come first (pyramid structure). Precise, declarative, no hedging. Anti-slop rules embedded. Output reads like a sharp senior leader wrote it, not like AI. Supports write-new and polish-existing modes.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "tone"
   pack: "chameleon-writer"
 ---
@@ -58,8 +58,11 @@ Use formal-executive to rewrite: [paste draft]
 
 These rules apply to all output from this skill. No exceptions.
 
-### Remove from vocabulary:
-delve, tapestry, landscape (abstract), pivotal, testament, underscore (verb), vibrant, showcase, groundbreaking, comprehensive, foster, garner, robust, synergy, leverage (verb), holistic, ecosystem, game-changer, navigate (challenges), unpack (analysis)
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
+groundbreaking, comprehensive, robust, synergy, leverage (verb), holistic, ecosystem, game-changer, navigate (challenges), unpack (analysis)
 
 ### Remove these phrases:
 - "It's worth noting that…" → state the note directly

@@ -2,7 +2,7 @@
 name: voice-fingerprint
 description: Extract a user's personal writing style from samples and apply it to any content. Use when you want AI output to sound like you, not like AI. Provide 2-5 paragraphs of your own writing; the skill analyzes sentence rhythm, vocabulary, punctuation, and register, then produces a compact Voice Profile you can paste into any other chameleon-writer skill to override its defaults. Minimum 150 words of sample text required.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "core"
   pack: "chameleon-writer"
 ---
@@ -38,7 +38,7 @@ Use voice-fingerprint with this sample, then write [topic] in my voice.
 - **Sample quality check:** If the sample itself shows heavy AI writing patterns (see below), warn the user before proceeding. Analyzing an AI-written sample produces a Voice Profile that sounds like AI, not the user.
 
 **Signs the sample may be AI-written (warn if 3+ present):**
-- Contains "delve", "tapestry", "pivotal", "testament", "underscore", "vibrant" clustered together
+- Contains several words from the AI vocabulary cluster (actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight, interplay, intricate, key, landscape, pivotal, showcase, tapestry, testament, underscore, valuable, vibrant) clustered together
 - Rule of three in every paragraph
 - Every sentence the same length
 - Em dashes throughout

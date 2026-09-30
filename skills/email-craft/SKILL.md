@@ -2,7 +2,7 @@
 name: email-craft
 description: Write or rewrite professional emails. No "I hope this email finds you well." Gets to the point by sentence 3. One clear ask per email. No sycophantic openers, no chatbot closers, no corporate filler. Works for cold outreach, internal communication, follow-ups, and sensitive messages. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "platform"
   pack: "chameleon-writer"
 ---
@@ -60,7 +60,10 @@ Use email-craft to rewrite: [paste draft]
 
 Email has its own AI slop flavor: corporate filler, sycophantic openers, chatbot closers, and passive voice that obscures who's doing what.
 
-### Remove from vocabulary:
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
 leverage (verb), synergy, ecosystem, bandwidth (for capacity), circle back, touch base, moving forward, going forward, action item, deliverable, deep dive (as verb), unpack, navigate (challenges), holistic, robust, seamless, game-changer, paradigm shift
 
 ### Remove these phrases:

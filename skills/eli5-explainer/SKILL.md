@@ -1,8 +1,8 @@
 ---
 name: eli5-explainer
-description: Write or rewrite content that explains complex topics to non-expert audiences. ELI5 (Explain Like I'm 5) — but smart, not patronizing. One concept per sentence. Analogies from everyday life, not corporate abstractions. No jargon without immediate definition. Short paragraphs. The goal is genuine understanding, not simplified performance. Anti-slop rules embedded. Supports write-new and polish-existing modes.
+description: Write or rewrite content that explains complex topics to non-expert audiences. ELI5 (Explain Like I'm 5), but smart, not patronizing. One concept per sentence. Analogies from everyday life, not corporate abstractions. No jargon without immediate definition. Short paragraphs. The goal is genuine understanding, not simplified performance. Anti-slop rules embedded. Supports write-new and polish-existing modes.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   layer: "tone"
   pack: "chameleon-writer"
 ---
@@ -58,8 +58,11 @@ Use eli5-explainer to rewrite for a non-expert audience: [paste draft]
 
 Explainer writing already fights one battle (complexity). AI slop adds a second (performance of clarity that isn't actually clear).
 
-### Remove from vocabulary:
-delve, tapestry, landscape (abstract), pivotal, testament, underscore (verb), vibrant, showcase, groundbreaking, comprehensive, foster, nuanced (as filler), robust, holistic, ecosystem, synergy, leverage (verb)
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
+groundbreaking, comprehensive, nuanced (as filler), robust, holistic, ecosystem, synergy, leverage (verb)
 
 ### Remove these phrases:
 - "It's worth noting that…" → say it

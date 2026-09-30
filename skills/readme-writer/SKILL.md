@@ -1,8 +1,8 @@
 ---
 name: readme-writer
-description: 'Write or rewrite GitHub READMEs and project documentation landing pages. Structure: What → Who → Install → One working example. No marketing language. No "blazing fast." No "elegant." Code blocks over prose for technical steps. No diff-anchored writing. Developer-facing — assumes a technical reader who wants to evaluate and use the project quickly. Anti-slop rules embedded. Supports write-new and polish-existing modes.'
+description: 'Write or rewrite GitHub READMEs and project documentation landing pages. Structure: What → Who → Install → One working example. No marketing language. No "blazing fast." No "elegant." Code blocks over prose for technical steps. No diff-anchored writing. Developer-facing: assumes a technical reader who wants to evaluate and use the project quickly. Anti-slop rules embedded. Supports write-new and polish-existing modes.'
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
   layer: "platform"
   pack: "chameleon-writer"
 ---
@@ -58,7 +58,10 @@ Use readme-writer to rewrite: [paste README]
 
 README slop combines technical writing's passive voice problem with marketing's promotional language problem.
 
-### Remove from vocabulary:
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
 blazing (fast), lightning (fast), elegant, powerful (without specifics), simple (without showing simplicity), effortless, seamless, delightful, intuitive, robust (without specifics), comprehensive, cutting-edge, next-generation, state-of-the-art, revolutionary, innovative, game-changing, production-ready (without evidence)
 
 ### Remove these phrases:

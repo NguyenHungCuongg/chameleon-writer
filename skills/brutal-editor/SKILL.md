@@ -1,9 +1,9 @@
 ---
 name: brutal-editor
-description: Cut any draft to a user-defined target. Specify a word count, character count, or percentage reduction (e.g. "cut to 200 words" or "cut by 40%"). Removes adverbs first, then hedges, then repetition, then promotional phrasing, then transition crutches. Never cuts the most specific detail in any paragraph. Flags any cut that loses verifiable information. Anti-slop rules embedded. Polish-only skill — provide a draft to cut.
+description: Cut any draft to a user-defined target. Specify a word count, character count, or percentage reduction (e.g. "cut to 200 words" or "cut by 40%"). Removes adverbs first, then hedges, then repetition, then promotional phrasing, then transition crutches. Never cuts the most specific detail in any paragraph. Flags any cut that loses verifiable information. Anti-slop rules embedded. Polish-only skill. Provide a draft to cut.
 metadata:
-  version: "1.0.0"
-  layer: "platform"
+  version: "1.0.1"
+  layer: "core"
   pack: "chameleon-writer"
 ---
 
@@ -99,8 +99,11 @@ Pause and let the user decide. Do not cut flagged passages unilaterally.
 
 While cutting for length, apply these in parallel — they often achieve the cut target before you reach Layer 5.
 
-### Remove from vocabulary:
-delve, tapestry, landscape (abstract), pivotal, testament, underscore (verb), vibrant, showcase, groundbreaking, comprehensive, foster, synergy, leverage (verb), ecosystem, game-changer, holistic, robust (without specifics), robust, nuanced (as filler), resonates (abstract), seamless, cutting-edge
+### Core AI vocabulary (same list in every chameleon-writer skill):
+actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant
+
+### Also remove from vocabulary:
+groundbreaking, comprehensive, synergy, leverage (verb), ecosystem, game-changer, holistic, robust (without specifics), nuanced (as filler), resonates (abstract), seamless, cutting-edge
 
 ### Remove these structures:
 - Em dashes (—) → comma or period (characters saved)

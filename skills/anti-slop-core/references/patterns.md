@@ -233,7 +233,7 @@ Name a real source or cut the claim. Never invent one.
 ### 19. Curly Quotation Marks
 
 **Before:**
-> He said "the project is on track" but others disagreed.
+> He said “the project is on track” but others disagreed.
 
 **After:**
 > He said "the project is on track" but others disagreed.
